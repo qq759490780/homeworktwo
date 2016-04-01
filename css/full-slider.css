@@ -14,6 +14,20 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.beijingship{
+	position: absolute;
+	top: 10px;
+	height: 100%;
+	margin: 0px auto;
+	width: 100%;
+	object-fit:cover;
+}
+
+.teshu {
+	margin: 0 ;
+	background-color: #111 ;
+}
+
 .carousel,
 .item,
 .active {

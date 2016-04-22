@@ -13,11 +13,27 @@
     <title></title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="css/lightbox.css">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="css/full-slider.css" rel="stylesheet">
-	<link rel="icon" href="ico/1.ico">
+    <link href="css/full-slider.css" rel="stylesheet" />
+	<link rel="icon" href="ico/1.ico" />
+
+	<!-- JS -->
+	<script src="js/jquery-1.11.1.min.js"> </script>	
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>	
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -117,12 +133,75 @@
         </a>
 
     </header>
+	<!-- 英雄图样 -->
+	<div class="gallery-top">
+			<!-- container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>英雄联盟壁纸</h2>
+						<hr class="star-primary">
+					</div>
+				</div>				
+				<div class="gallery-grids-top">
+					<div class="gallery-grids">
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/11.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/1.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/12.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/2.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/13.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/3.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/14.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/4.jpg" alt=""/></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="gallery-grids gallery-grids-middle">
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/15.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/5.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/16.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/6.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/17.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/7.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/18.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/8.jpg" alt=""/></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="gallery-grids">
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/19.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/9.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/20.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/10.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/21.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/23.jpg" alt=""/></a>
+						</div>
+						<div class="col-md-3 gallery-grid">
+							<a class="example-image-link" href="images/22.jpg" data-lightbox="example-set" data-title=""><img class="example-image" src="images/24.jpg" alt=""/></a>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<script src="js/lightbox-plus-jquery.min.js"></script>
+				</div>
+			</div>
+	</div>
     <!-- 下面文本 -->
     <div class="container">
 
         <div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 id="jianjie">英雄联盟简介</h2>
+				<hr class="star-primary">
+			</div>
             <div class="col-lg-12">
-                <h1 id="jianjie">英雄联盟简介</h1>
                 <p>《英雄联盟》（简称lol）是由美国Riot Games开发，中国大陆地区由腾讯游戏运营的网络游戏。
 					《英雄联盟》除了即时战略、团队作战外，还拥有一百多位特色各异的英雄、丰富的地图及玩法、自动匹配的战网平台，包括天赋树、召唤师系统、符文等元素。 
 					2014年1月，根据官方数据显示，LOL全球最高同时在线已突破750万，全球日活跃高达2700万，全球月活跃已达6700万，注册用户亿计，LOL已经成为当今世界最具人气和影响力的网络游戏之一。</p>
